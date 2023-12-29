@@ -1,4 +1,4 @@
-local Orion1 = game.CoreGui:FindFirstChild("REDz HUB <Orion Lib>")
+local Orion1 = game.CoreGui:FindFirstChild("zRed Hub <Orion Lib>")
 
 if OrionR then
   OrionR:Destroy()
@@ -57,7 +57,7 @@ guiRH = Instance.new("ScreenGui",Orion)
 nextb = Instance.new("ImageButton", guiRH)
 gui = Instance.new("UICorner", nextb)
 
-Orion.Name = "REDz HUB <Orion Lib>"
+Orion.Name = "zRed Hub <Orion Lib>"
 
 guiRH.Name = "Minimize"
 nextb.Position = UDim2.new(0,100,0,60)
@@ -480,14 +480,14 @@ function OrionLib:MakeWindow(WindowConfig)
 	local UIHidden = false
 
 	WindowConfig = WindowConfig or {}
-	WindowConfig.Name = WindowConfig.Name or "REDz HUB"
+	WindowConfig.Name = WindowConfig.Name or "zRed Hub"
 	WindowConfig.ConfigFolder = WindowConfig.ConfigFolder or WindowConfig.Name
 	WindowConfig.SaveConfig = WindowConfig.SaveConfig or false
 	WindowConfig.HidePremium = WindowConfig.HidePremium or false
 	if WindowConfig.IntroEnabled == nil then
 		WindowConfig.IntroEnabled = true
 	end
-	WindowConfig.IntroText = WindowConfig.IntroText or "REDz HUB"
+	WindowConfig.IntroText = WindowConfig.IntroText or "zRed Hub"
 	WindowConfig.CloseCallback = WindowConfig.CloseCallback or function() end
 	WindowConfig.ShowIcon = WindowConfig.ShowIcon or false
 	WindowConfig.Icon = WindowConfig.Icon or "rbxassetid://8834748103"
@@ -673,11 +673,11 @@ function OrionLib:MakeWindow(WindowConfig)
 	end)
 	
 	AddConnection(CloseBtn.MouseButton1Up, function()
-	  OrionLib:MakeNotification({Name = "REDz HUB",Content = "Destruindo o Script..." ,Image = "rbxassetid://",Time = 5})task.wait(1)
+	  OrionLib:MakeNotification({Name = "zRed Hub",Content = "Destruindo o Script..." ,Image = "rbxassetid://",Time = 5})task.wait(1)
 	  Orion:Destroy()
 	end)
 
-	OrionLib:MakeNotification({Name = "REDz HUB",Content = "Executando Script..." ,Image = "rbxassetid://",Time = 5})
+	OrionLib:MakeNotification({Name = "zRed Hub",Content = "Executando Script..." ,Image = "rbxassetid://",Time = 5})
 
 	local function LoadSequence()
 		MainWindow.Visible = false
